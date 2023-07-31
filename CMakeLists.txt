@@ -59,6 +59,7 @@ message("pybind11_protobuf_INCLUDE_DIRS: ${pybind11_protobuf_INCLUDE_DIRS}")
 
 # TODO fix upstream...
 set(pybind11_protobuf_INCLUDE_DIRS ${pybind11_protobuf_SOURCE_DIR})
+set(protobuf_INCLUDE_DIRS ${protobuf_SOURCE_DIR})
 
 #============================================================================
 # gz_msgs_extras_lib C++ library
