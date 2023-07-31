@@ -19,7 +19,7 @@ option(BUILD_TESTS "Build tests." OFF)
 # macOS: $ brew install python
 # macOS: $ brew install pybind11
 # 
-find_package(Python 3.10 EXACT COMPONENTS Interpreter Development)
+find_package(Python 3.8 EXACT COMPONENTS Interpreter Development)
 
 #============================================================================
 # Find Gazebo dependencies
@@ -94,6 +94,7 @@ target_link_libraries(extras
 target_include_directories(extras
   PRIVATE
     ${PROJECT_SOURCE_DIR}/include
+    ${protobuf_INCLUDE_DIRS}
     ${pybind11_protobuf_INCLUDE_DIRS}
 )
 
