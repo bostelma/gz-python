@@ -19,7 +19,7 @@ option(BUILD_TESTS "Build tests." OFF)
 # macOS: $ brew install python
 # macOS: $ brew install pybind11
 # 
-find_package(Python 3.8 EXACT COMPONENTS Interpreter Development)
+find_package(Python 3.7 EXACT COMPONENTS Interpreter Development)
 
 #============================================================================
 # Find Gazebo dependencies
@@ -48,7 +48,7 @@ set(_protobuf_tag v21.5)
 
 set(_pybind11_protobuf_repository "https://github.com/pybind/pybind11_protobuf.git")
 set(_pybind11_protobuf_version 0.0.0)
-set(_pybind11_protobuf_tag main)
+set(_pybind11_protobuf_tag 33b4dbd8c74aefc560bb81211aac43a0e5147980)
 
 add_subdirectory(cmake/dependencies dependencies)
 list(APPEND CMAKE_PREFIX_PATH ${CMAKE_CURRENT_BINARY_DIR}/dependencies/install)
